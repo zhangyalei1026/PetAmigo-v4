@@ -116,7 +116,7 @@ public class UserAdapter extends RecyclerView.Adapter<UserAdapter.ViewHolder>{
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 if (dataSnapshot.child(id).exists())
-                    btnFollow.setText("friends");
+                    btnFollow.setText("following");
                 else
                     btnFollow.setText("follow");
             }
